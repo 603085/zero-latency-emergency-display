@@ -1,0 +1,97 @@
+#set_pin_assignment	{ I_sys_clk }	{ LOCATION = R7; IOSTANDARD = LVCMOS33;}
+
+#set_pin_assignment	{ O_tmds_ch0_p }	{ LOCATION = G5; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+#set_pin_assignment	{ O_tmds_ch1_p }	{ LOCATION = F1; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+#set_pin_assignment	{ O_tmds_ch2_p }	{ LOCATION = E1; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+#set_pin_assignment	{ O_tmds_clk_p }	{ LOCATION = C3; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+
+#set_pin_assignment	{ I_i2s_BCLK }	{ LOCATION = J13; IOSTANDARD = LVCMOS33; PULLTYPE = NONE;} #J4 pin 7
+#set_pin_assignment	{ I_i2s_LRCK }	{ LOCATION = F13; IOSTANDARD = LVCMOS33; PULLTYPE = NONE;} #J4 pin 3
+#set_pin_assignment	{ I_i2s_DOUT }	{ LOCATION = L14; IOSTANDARD = LVCMOS33; PULLTYPE = NONE;} #J4 pin 9
+
+#set_pin_assignment	{ I_key_in }	{ LOCATION = A2; IOSTANDARD = LVCMOS33;}
+
+set_pin_assignment	{ HDMI_DDC_SCL }	{ LOCATION = P2; IOSTANDARD = LVCMOS33;DRIVESTRENGTH = 8; PULLTYPE = PULLUP;}
+set_pin_assignment	{ HDMI_DDC_SDA }	{ LOCATION = R2; IOSTANDARD = LVCMOS33;DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ HDMI_CLK_P }	{ LOCATION = C3; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ HDMI_D0_P }	{ LOCATION = G5; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ HDMI_D1_P }	{ LOCATION = F1; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ HDMI_D2_P }	{ LOCATION = E1; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ clk }	{ LOCATION = R7; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ rst_n }	{ LOCATION = A2; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }   # KEY1: reset, NEEDS the pull-up (was NONE -> floating -> random resets)
+set_pin_assignment	{ sd_dclk }	{ LOCATION = A14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sd_miso }	{ LOCATION = B14; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ sd_mosi }	{ LOCATION = A13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sd_ncs }	{ LOCATION = A12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_data[0] }	{ LOCATION = C15; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_data[1] }	{ LOCATION = C16; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_data[2] }	{ LOCATION = B6; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_data[3] }	{ LOCATION = A5; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_data[4] }	{ LOCATION = B5; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_data[5] }	{ LOCATION = A8; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_data[6] }	{ LOCATION = A7; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_data[7] }	{ LOCATION = A6; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_sel[0] }	{ LOCATION = E12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_sel[1] }	{ LOCATION = E10; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_sel[2] }	{ LOCATION = C13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_sel[3] }	{ LOCATION = F10; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_sel[4] }	{ LOCATION = E11; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ seg_sel[5] }	{ LOCATION = D11; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[0] }	{ LOCATION = F6; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[10] }	{ LOCATION = L8; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[11] }	{ LOCATION = E13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[1] }	{ LOCATION = E6; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[2] }	{ LOCATION = D6; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[3] }	{ LOCATION = D5; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[4] }	{ LOCATION = T5; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[5] }	{ LOCATION = P5; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[6] }	{ LOCATION = N5; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[7] }	{ LOCATION = N6; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[8] }	{ LOCATION = R5; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_data[9] }	{ LOCATION = L7; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_out_hs }	{ LOCATION = E7; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vga_out_vs }	{ LOCATION = F7; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+
+# ---------- Task A pin assignments ----------
+# KEY1 A2: no longer a port. Manual names: KEY2 B2 / KEY3 B1 / KEY4 C1
+set_pin_assignment	{ key4 }	{ LOCATION = C1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }   # KEY4 = Task B：短按改数值 / 长按(0.6s)换参数项（param_regs.key_next_param）
+set_pin_assignment	{ key2 }	{ LOCATION = B2; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }   # KEY2 = manual next
+set_pin_assignment	{ key3 }	{ LOCATION = B1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }   # KEY3 = rotation toggle
+set_pin_assignment	{ sw_emergency }	{ LOCATION = C6; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+# ---------- 参数交互拨码（★ 2026-10-14 改版）----------
+# 《接口契约与分工表》§5.2 把 C8 / C7 分给"参数 + / 参数 −"（契约里叫 sw1 / sw2）。
+# 2026-10-14 按用户要求改了交互：
+#     C8 (SW1, sw_param_up) → 按住 = 按【当前方向】连续步进（原来是"参数 +"）
+#     C7 (SW2, sw_dir)      → 方向选择：拨上 = +，拨下 = −（原来是"参数 −"）
+#     C1 (KEY4)             → 短按 = 按方向改数值；长按 0.6 s = 换参数项
+# 本工程用的端口名是 sw_param_up / sw_dir。
+#
+# PULLTYPE = PULLUP 是必须的：拨码"拨上为 1"，拨到另一侧时若不靠上拉拉住，
+# 引脚就是浮空输入，拨码会随机跳数（和 rst_n / uart_rx 同一个道理）。
+#
+# 注意别和 sw_emergency(C6) 撞：C6 是应急拨码，mode_fsm 在用，
+# 应急模式（字幕变红 / 硬切 / 应急图）全靠它，不要挪。
+set_pin_assignment	{ sw_param_up }	{ LOCATION = C8; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sw_dir }	{ LOCATION = C7; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ dbg_latency }	{ LOCATION = B12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+set_pin_assignment	{ dbg_one_frame }	{ LOCATION = A4; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+set_pin_assignment	{ led_param_act }	{ LOCATION = A3; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+set_pin_assignment	{ led_audio_act }	{ LOCATION = C10; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+
+# ---------- 串口改字（Task A 扩展）----------
+# 板载 CH340 USB转UART，板上左侧 Type-C 口（同时是 5V 供电口）。
+# 手册《HX4S20 开发板手册 HDL版2410》第⑦节「USB转UART」：
+#     RXD -> F12,  TXD -> D12
+# 与开发板原理图 CH340G 页、以及厂商例程 16_串口通信设计 的约束完全一致：
+#     set_pin_assignment { uart_rx } { LOCATION = F12; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+# PULLTYPE = PULLUP 是必须的：串口空闲是高电平，拔掉线时若引脚悬空，
+# 接收机会把噪声当成起始位，不断往字幕缓冲里塞乱码。
+set_pin_assignment	{ uart_rx }	{ LOCATION = F12; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }   # CH340 RXD，115200 8N1
+
+# The 4 standalone LEDs are NOT shared with the 7-segment display or
+# the bi-colour LEDs, so they are unaffected by the SW6 selector.
+
+set_pin_assignment	{ sw_audio_en }	{ LOCATION = C5; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
